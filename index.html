@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/obig.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-size="fit" data-background-position="50% 90%" data-background="images/cover.png">
+				  <aside class="notes">
+				    * more explicit on products are open source
+				    * explain overlap between all products and services: buckram
+				    * how are client services open source exactly?
+	  Surgery, offshore structures, bridges and spacecraft. When we simulate life-critical engineering, we need to understand the accuracy of our tools in each specific scenario. To do this, we need to know the underlying theory. A number of years ago, an entire oil rig collapsed in Norway, as a result of this lack of understanding.
+	  When I was working in engineering, we needed to check which established theory was used by a common proprietary tool we used for all those applications. They told us that was commercially sensitive information. If there were accepted open tools, transparent and without vendor lock-in, could we justify buying from that closed provider again? At that point I realised that closed source, as an economic model in critical industry applications, has a finite life.
+	  Now think of all the contexts where transparency and accountability are critical in software - hospitals, government, courts, data security, cybersecurity. That may seem positive for free software's future, but only if it is self-sustaining without the closed source ecosystem - core developers not having to rely on proprietary or research-only employers to keep them fed.
+	I believe open source is normally more economically efficient and socially beneficial than closed source, so FLOSS should be a safe business bet in the long-term. I quit my job several years ago to test this, and discovered you need to eat in the short-term.
+				  </aside>
+				</section>
+				<section data-background-color="#222020" data-background-size="contain">
+				    <img src="./images/adventurer-consorting.png"/>
+				    <aside class="notes">
+	So this is the story about how we found a model that's kept us afloat so far.
+				      How many of you have played table-top adventure games, or classic RPGs? Pathfinder, Dungeons &amp; Dragons? These games often involve a group of people meeting up occasionally to role-play characters in a guild or syndicate, with a diverse range of skills and personalities - wizards, warriors, even pairs or trios of characters played by one player. Together, they go on quests for gold, rescue kidnapped kings &amps; queens, defeat monsters. A couple of my coworkers introduced me to this world about the time I set up my own company. We didn't have everybody turn up for games every month, so even with one big theoretical adventurers' syndicate of all of us involved, some quests would involve some adventurers, others would involve others - we tried to pick quests that matched the available skillsets of each month's group. Two wizards would have a magical quest, a wizard and three warriors would go into battles. You've probably guessed that I'm going to tell the story of our business syndicate using these adventurers.
+				    </aside>
+				  </section>
+				  <section data-background-size="contain">
+				    <p>Case Study</p>
+				    <img height="500px" src="./images/datatimes.png"/>
+				    <aside class="notes">
+				      Before I go into our general approach, here's a concrete example from a project we've only just started. Try and bear in mind this case study when we go forward. In 2018, my microcompany led a consortium bid for R&amp;D funding. This was to build a prototype open data discovery platform for community journalists, who often struggle to engage with accountability information released by governments. This was to be entirely open source, based on our team's experience of open data. We wrote the bid closely with user research and community journalism partners. We planned out focus groups, performance measures, provisional budget, risk mitigations and tried to get up to speed on the field all before the bid. When we were awarded the funding, we paid a lawyer to write a legal consortium contract for the project partners. Last week, in Belfast, our UX partner ran our first focus group with journalists. The two development companies have been doing proof-of-concept work and produced a basic feasibility study. Over the next six months, we will build out and get feedback on this prototype, and research ways of getting it moved on to a v1.
+				    </aside>
+				  </section>
+				<section data-background='#222020'>
+				  <img src="images/avata-structure.png"/>
+				</section>
+				<section data-background-size="contain" data-background="images/adventurer-prime.png">
+				  <aside class="notes">
+				  That could be making the biggest social difference for a specific group, making the most money fast, a product you truly believe in. if you have a principle of not working more than 40h a week, and another of only working with carbon neutral clients, you'll magically get down to one paying client who expects you to answer the phone at 4am, before a multinational offers you a grand a month retainer to host their one page oilrig brochure site. If you don't know which is the priority at the outset, you'll end up compromising both principles before your business runs out of road.
+				  </aside>
+				</section>
+				  <section data-background='#222020'>
+				    <img src='images/spectrum2.png'/>
+				    <aside class="notes">
+				      <h4>open source is only one critical piece of an open technology jigsaw</h4>
+				      <ul>
+					<li>in software development, open source can stand alone - a software developer needs software, they develop open software, software developers improve open software</li>
+					<li>but it gets muddy when you move to anything involving design - can you have open source without open licensed assets? some say yes, some say no</li>
+					<li>when you move into business, it gets so much more complicated again - customers that care only about software solutions, will still go for black box solutions with reassuringly big pricetags and lock-in. customers that care about open software, such as government bodies or increasing numbers of tech start-ups, care about it because it's open, and that affects source, data, standards, services, research and security</li>
+					<li>However, for the moment, I'm going to stay off business models and clients, and explain how we used "open" to give us a unique selling point</li>
+				      </ul>
+				    </aside>
+				  </section>
+				  <section>
+				    <h1>Every "U"</h1>
+				    <h2>is an "SP"</h2>
+				    <aside class="notes">
+				      <h4>using FLOSS philosophy in building up business relationships </h4>
+				      <ul>
+					<li>Focusing on open IP is a constraint our competitors didn't have</li>
+					<li>As we had our one prime directive, we had to be pragmatic about what we worked with, who or where</li>
+					<li>So we looked at where closed IP was a constraint, and the opportunities we had our competitors didn't</li>
+					<li>In particular, why don't four people build one big house instead of four small ones? Because they have to work out how to share it</li>
+					<li>Closed IP companies working together is messy, but stop trying to put commercial value in exclusive IP, and you open up a world of options</li>
+					<li>As soon as you can have separate microentities working together, without lock-in to each other or exclusive IP rights, doing projects on a consortium basis, rather than a subcontract hierarchy becomes possible</li>
+					<li>If you are working locally, you may find regional work tends to be development-light and low budget - therefore, design agencies tend to be easier to grow than development companies, and consequently are big enough to attract any larger development projects</li>
+					<li>Agencies are then tied by the need to bring in developers without enough dev-heavy projects to build a full-time devhouse. Freelance developers have very little buy in to agency customers, and are often resentful of the mark-up agencies apply to their hours. Conversely, agencies are under intense pressure to deliver projects without technically-adept PMs to set scope and expectations, and find many freelancers to be unreliable and fixated on technical detail - consequently, they need a high margin on subcontractor costs to offset the high risk. I'm sure the most feared words a prime contractor can hear from a dev who has disappeared off the radar for 3 weeks or a 6 week project are "sorry, something came up, no longer able to finish this - don't worry, I'll only bill you for the time I've done".</li>
+					<li>How do you resolve that? If clients buy in to the fact at least some IP is not exclusively theirs, and any such IP is open, everything changes. This can be achieved through a simple consortium model, or just carefully worded subcontract. Any freelance developers can then be building their own (open) IP bank and commercial profile that allows them to build up multiple agency clients, a one-person company of their own. Agencies can see they are bought in through their open IP, and have access to any of that IP, so have not practically lost out. Developers starting to grow a profile, can gradually get a foot on the customer-facing ladder, where they can win work and subcontract design components back to an agency. This is often the kind of work agencies see as a risk to take on themselves, so prefer not to be prime contractor - tough technical requirements, light on design, but it suddenly means they have developers who are as dependent on them to deliver as the reverse. Add another dev or two and you have the bones of a consortium - highly specialist microentities and small businesses, able to jointly bid for work.</li>
+					<li>In particular, the main obstacles monolithic small businesses, your competitors, have is their inability to find and keep specialists. In a consortium model, unlike a coop or partnership, no one individual or business is responsible for anyone else's income - this brings challenges, but it also vastly increases the scope for bringing in specialists, and with specialists come high value larger projects, with fewer competitors. It also allows everyone to set their own working expectations, price themselves in or out of individual pieces of work, commit to one project at a time. Consortium members must either be useful enough to the group that they keep a stream of subcontracting coming in, or find projects themselves - as most members are specialists, these will inevitably fund several members.</li>
+					  https://twitter.com/TimSweeneyEpic/status/1083476975312949250
+				      </ul>
+				    </aside>
+				  </section>
+				  <section data-background-size="contain">
+				    <img src="./images/adventurer-products.png"/>
+				    <aside class="notes">
+				      <ul>
+					<li>One key benefit of R&amp;D funding, and a major selling point for getting people out of contracting into a consortium is product-building</li>
+					<li>Open source allows a lot of decisions that have to happen up front in an exclusive IP world to happen at the end - every one can take the copyright and do what they want with it, but one company or a subset may wish to commercalize it - that is the point of R&amp;D, but with open source, making the commercial decisions at the end is much less messy than it would be otherwise. Trademark is a slightly thornier issue - this is one we have realised needs to be handled differently, having more in common with attribution than code. No guarantee is given on entering an R&amp;D project that you will have access to the brand at the end, unless you are part of the resulting new product company, but all the source code is open to you regardless. You can start a competitor with a new brand, if you so desire.</li>
+					<li>Open product vendors, outside freemium, generally trade on market position, first mover advantage, expertise and lack of lock-in. This means that, fittingly for a consortium, product money will primarily be through services and consultancy. We are still early on that path, but while this is much lower margin than a unicorn product, it's also much more sustainable, and through SLAs, allows us to charge directly for our development time improving it.</li>
+					<li>A side-point here, touching on politics - I've said open source consistently. If you're working in web, GPL is MIT spelt badly. Free is only as free as it is to the end user - if your end user is a developer using your tools as libraries, go permissive. However, if you are writing for consumers and want your tool to always be open for them, avoiding cannibalization by a closed source competitor, seriously consider AGPL, along side a clear public statement of what you consider a combined work. It is the only OSI approved license that provides some protection from opportunists seeking to show how open source people are daft by beating them with their own stick.</li>
+				      </ul>
+				    </aside>
+				  </section>
+				  <section data-background-size="contain">
+				    <img src="./images/products.png"/>
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain" data-background="images/adventurer-clients.png">
+				    <aside class="notes">
+				      <h4>how we reach agreement on the balance between private, open and free with clients</h4>
+				      <ul>
+					<li>Realistically though, product is important but a benefit of a consortium is that you don't have to operate as an island of directors with a product - you are able to have some members working on product, some with clients and some on both.</li>
+					<li>Our client work facilitates our product work - it allows us to fund development on overlapping features. Clients tend not to be too worried about this if it's done transparently. Bizarrely, we have found non-technical clients far quicker to get on board with the idea than technical clients used to traditional models.</li>
+					<li>We have found that the key phrase for non-technical clients is "non-sector specific". That is, we open source "non-sector specific" tools and improvements. Their main fears are around competition and dilution of brand - neither of those are inherent obstacles to open sourcing code, as long as it's not specific to a sector. For instance, a set of infrastructure scripts, or a report generation microservice.</li>
+					<li>We put this prominently in quote documents, and it appears in our contracts. We have had resistance and push-back, but as long as the our own project lead is bought it, we have not lost work. Nonetheless, one of the hardest jobs, especially when dealing with hard-nosed commercial PMs, is standing your ground - if you aren't a natural negotiator, make sure someone in your group is and instruct them not to let a restrictive IP agreement be bounced through. If it helps, see all client work that you don't get any open IP out of as fasting. You can keep fasting for only so long before your consortium is going to fade away.</li>
+				      </ul>
+				    </aside>
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain" data-background="images/adventurer-variety.png">
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain">
+				    <ul>
+				      <li class="fragment">Infra, data, sysadmin, devops &amp; cybersec</li>
+				      <li class="fragment">Product, UX, UI, SEO, comms, copy, socmed</li>
+				      <li class="fragment">Tender writing, bizdev, finance, marketing</li>
+				      <li class="fragment">FE, BE, app, systems, HW, design &amp; AV</li>
+				      <li class="fragment">Training, research, funding, administration</li>
+				    </ul>
+				  </section>
+				  <section data-background-size="contain" data-background="images/adventurer-overlap.png">
+				    <aside class="notes">
+				    </aside>
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain">
+				    <h2>Isn't this a...</h2>
+				    <img src="./images/adventurer-startup-cooperative.png"/>
+				    <aside class="notes">
+				    </aside>
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain">
+				    <h2>Isn't this a...</h2>
+				    <img src="./images/adventurer-contractor-group-freelance.png"/>
+				    <aside class="notes">
+				      <h4>variety of skillsets is essential, and open source facilitates this</h4>
+				      <ul>
+					<li>Now you have a consortium, how can you make _that_ a USP to give an edge on competitors, and keep getting work?</li>
+					<li>Monolithic small companies struggle to find and keep specialists - as a consortium this is much easier, everyone is responsible for finding and maintaining their own  To avoid being dependent on an individual</li>
+					<li>Dev and design is a start, but training, tender-writing, administration, product management and UX, business development, marketing, content writing, various stacks, languages and platforms. Diversity of skillsets gets projects - frequently you're often competing against contractor groups, and what they cannot offer is what consortia and agencies can, end-to-end skillsets. Projects big enough to have budgets for scalable Kubernetes-based machine learning infrastructure have budgets for focus groups and user research - offer both credibly or lose out to a UX house who can hire a Watson consultant.</li>
+					<li>However, diversity of skillsets is also a huge vulnerability - one collaborator can hold a whole consortium to ransom. There are two main mitigations, legal through tight per-project consortium contracts and, even more importantly, through overlap. We had resistance to this as people didn't like having someone else with their skillset competing for work with them inside a consortium - however, opinions very quickly changed as individual members led projects, or saw six months of their income at risk because one person took ill. A practical result of this, given realistic member counts, is that every company should be bringing more than one skill to the table, even if it isn't their forte - for example, Python and JS, training and content writing, back-end and infrastructure, front-end and graphics, tender writing and scoping, UX and budget drafting.</li>
+				      </ul>
+				    </aside>
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain">
+				    <h2>How does this beat...</h2>
+				    <img src="./images/adventurer-agency.png"/>
+				    <aside class="notes">
+				      <h4>variety of skillsets is essential, and open source facilitates this</h4>
+				      <ul>
+					<li>Now you have a consortium, how can you make _that_ a USP to give an edge on competitors, and keep getting work?</li>
+					<li>Monolithic small companies struggle to find and keep specialists - as a consortium this is much easier, everyone is responsible for finding and maintaining their own  To avoid being dependent on an individual</li>
+					<li>Dev and design is a start, but training, tender-writing, administration, product management and UX, business development, marketing, content writing, various stacks, languages and platforms. Diversity of skillsets gets projects - frequently you're often competing against contractor groups, and what they cannot offer is what consortia and agencies can, end-to-end skillsets. Projects big enough to have budgets for scalable Kubernetes-based machine learning infrastructure have budgets for focus groups and user research - offer both credibly or lose out to a UX house who can hire a Watson consultant.</li>
+					<li>However, diversity of skillsets is also a huge vulnerability - one collaborator can hold a whole consortium to ransom. There are two main mitigations, legal through tight per-project consortium contracts and, even more importantly, through overlap. We had resistance to this as people didn't like having someone else with their skillset competing for work with them inside a consortium - however, opinions very quickly changed as individual members led projects, or saw six months of their income at risk because one person took ill. A practical result of this, given realistic member counts, is that every company should be bringing more than one skill to the table, even if it isn't their forte - for example, Python and JS, training and content writing, back-end and infrastructure, front-end and graphics, tender writing and scoping, UX and budget drafting.</li>
+				      </ul>
+				    </aside>
+				  </section>
+				  <section data-background-size="contain">
+				    <h2>If it works without mandating open, it isn't this</h2>
+				    <aside class="notes">
+				    </aside>
+				  </section>
+				  <section data-background-size="contain">
+				    <h2>Starting out</h2>
+				    <aside class="notes">
+				    </aside>
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain" data-background="images/adventurer-r-and-d.png">
+				    <aside class="notes">
+				      <h4>the role of research &amp; development</h4>
+				      <ul>
+					<li>Who are the customers for our Prime Directive?</li>
+					<li>Well, many options exist, but IP tends to be most flexible at the R&amp;D stage. There is also much more scope for funding without IP strings attached, such as for proof-of-concept or showcase projects. These are often more focused on clear demonstration of advanced technical ideas than extensive stable CMS sites - great for getting developers and designers starting out</li>
+					<li>Within R&amp;D though, open source provides a USP, provided it doesn't exist in a vacuum - this is the first example of where we have to see open source as part of an open spectrum</li>
+				      </ul>
+				    </aside>
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain" data-background="images/adventurer-budget-pivoting.png">
+				  </section>
+				  <section data-background-size="contain" data-background="images/adventurer-business-development.png">
+				  </section>
+				  <section data-background-size="contain">
+				    <img src="images/ktn.png"/>
+				    <small>e.g. ktn-uk.co.uk/funding</small>
+				  </section>
+				  <section data-background-size="contain" data-background="images/adventurer-resourcing.png">
+				  </section>
+				  <section data-background-size="contain">
+				    <img src="images/zoo.jpeg"/>
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain" data-background="images/adventurer-legal.png">
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain" data-background="images/adventurer-parallel-work.png">
+				  </section>
+				<section data-background-size="contain" data-background-position="0% 90%" data-background="images/obig-presentation2-front.png">
+				    <h3>What is this like in practice?</h3>
+					<aside class="notes">
+  <h4>working with non-technical users, in companies big and small, to meet their needs and keep ourselves going</.>
+					  <ul>
+					    <li>Where possible, we dog-food. If you don't can't use open source yourself, don't expect others to.</li>
+					    <li>But not where it gets in the way. If the open source option is not a serious contender for best of breed, then you're holding yourself back and helping your proprietary competitors beat you.</li>
+					    <li>We use Taiga most of the time, Gitlab and  Github both, RocketChat for team comms, Helpy for customer support and, I at least, use InvoiceNinja for invoicing</li>
+					    <li>Otherwise, client work is a lot like a large agency. However, there a few key differences as a result of the consortium model.<li>
+					    <li>A consortium is much looser structurally than a company, and much more self-driven. It helps if you have someone involved with experience of managing a consortium, as it is a continual negotiation</li>
+					    <li>You need to have several key people who are very good at being direct - miscommunication risks are much higher, and people going missing or AWOL needs to be dealt with ruthlessly. That means you shouldn't go into a project as a lead assuming you pay everyone in full, and neither should they - be realistic, but remember that as a consortium, if someone is missing, the earlier you pay a replacement out of their budget, the less likely you'll have to tell the other partners that the client has pulled the project next six months of income.</li>
+					    <li>Everybody should win and lead projects - give them all the tender writing support, all the business development support you can, but it should be their neck on the line as Prime Contractor. This made a massive difference for us - helping developers understand the overheads agencies charge, and agencies understand the tensions caused by vague requirements, and everyone understanding the need for their budget to cover a replacement if necessary.</li>
+					    <li>Because almost all our legal structure is around projects, and we are not bound by a single company, there is more scope for drifting apart in remote relationships - compared to a traditional company, it is very important for us to have regular on-site time for members of all businesses involved. We have found those who stay remote quickly disappear.</li>
+					    <li>Similarly, as common as it is in the industry, out-of-hours contracting has almost entirely failed for us - after a number of people attempting it, we have only seen it work twice, despite the best of intentions. Never work with an out-of-hours contractor unless you can finish all their undelivered work from scratch at the last minute - sometimes that is possible, and the experience can help them transition into self-employment, but a sad lesson for all PMs working with freelancers is that if they're not relying on their own work, you should never, ever, ever be relying on them to deliver to a client.</li>
+					    <li>Finally, one way we try and give back is by working with upstream folks, and if we can redirect some work their way all the better for all parties. We have tried this, but didn't get the availabilities to match, but seriously consider it - if you're depending on a project run by self-employed authors, there's no better way of keeping it improving than helping them stay fulltime on it. A lesson the industry has been slow to learn.</li>
+
+					  </ul>
+					</aside>
+				</section>
+				  <section data-background-color="#222020" data-background-size="contain">
+				    <h3>Key points</h3>
+				    <ul>
+				      <li class="fragment">Contract Equation: Cost = Risk + Time + Skills</li>
+				      <li class="fragment">Anyone can "coordinate"</li>
+				      <li class="fragment">No-one is guaranteed work</li>
+				      <li class="fragment">90% structure is per project</li>
+				      <li class="fragment">Easy on-board/off-board</li>
+				    </ul>
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain">
+				    <h3>Tattooed on my forehead</h3>
+				    <ul>
+				      <li class="fragment">Fair =&gt; rigidity and consistency</li>
+				      <li class="fragment">Life is a negotiation</li>
+				      <li class="fragment">Reliance must go both ways</li>
+				      <li class="fragment">Less you charge, the harder the client</li>
+				      <li class="fragment">People <em>must</em> run projects to relate</li>
+				      <li class="fragment">Devs who undervalue non-dev<br/>disciplines are a liability</li>
+				    </ul>
+				  </section>
+				  <section data-transition="fade" data-background-color="#222020" data-background-size="contain">
+				    <img src="images/workflow-lite.png"/>
+				
+				  </section>
+				  <section data-transition="fade" data-background-color="#222020" data-background-size="contain">
+				    <img src="images/workflow.png"/>
+				
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain">
+				    <img src="images/adventurer-hardest-lesson.png">
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain">
+				    <h3>Future</h3>
+				    <ul>
+				      <li class="fragment">Overseas Event (Hong Kong)</li>
+				      <li class="fragment">Second Phase - 2-3 year</li>
+				      <li class="fragment">Open Industry Network</li>
+				      <li class="fragment">Focus: SLAs &amp; Product Sales</li>
+				    </ul>
+				  </section>
+				  <section data-background-color="#222020" data-background-size="contain">
+				    <h3>WHY?</h3>
+				    <ul>
+				      <li class="fragment">Can work on FLOSS as part of an income</li>
+				      <li class="fragment">Not waiting for an OSS employer</li>
+				      <li class="fragment">Burst your tech bubble</li>
+				      <li class="fragment">Follow your own, not group, passion</li>
+				    </ul>
+				  </section>
+				<section data-background-size="contain" data-background-position="0% 90%" data-background="images/obig-presentation2-front.png">
+				  <h1>Resources</h1>
+					<aside class="notes">
+<h4>how we are aiming to support others in taking the same steps - in reusable template documents, R&D oucomes, lessons learned, and building a roadmap ahead</h4>
+<ul>
+  <li>What resources have we?</li>
+  <li>Vilnius</li>
+  <li>OpenIndustry</li>
+</ul>
+					</aside>
+				</section>
+				  <section data-transition="fade-in">
+				  	<img src='images/trl.png'>
+					<aside class="notes">
+					  <ul>
+					    <li>If you want to keep revenue coming in without being stuck living hand-to-mouth as a freelancer, you need to get comfortable with funding frameworks, innovation funding, business writing - if you don't like it, you can take that as your one Prime Directive, but if not, you've got to suck it up and learn. Technological Readiness Levels came out of the European space programme - they go from concept down at 1 through early R&amp;D to prototype to beta testing to in-market product</li>
+					    <li>This slide focus on open access - who knows of open access? It's about making research results, and research data, freely accessible. Why is that important? Because it enables a form of sector-wide collaboration between academia and industry - instead of point-to-point collaborations between individual research institutes and multinationals behind closed doors.</li>
+					    <li>Academia is not great at getting prototypes to market - SMEs haven't the funds for blue sky research. Ideally, open access gets those ideas out of academia, along with concept code. SMEs can pick up on that and enhance the open source, or develop their own - this helps build links with researchers, and encourage them to collaborate without dropping millions of pounds in academic consultancy fees. By supplying their data and outcomes openly, this provides researchers with opportunities for further publishing and joint work - you can see some of this in action in blockchain research, and so forth. However, without academia benefiting through open source, APIs and data, all SMEs can offer is mountains of cash - good reason to stick to open source.</li>
+					    <li>There are a number of funds, which will help you work with academia and build products, especially open products, both locally and nationally. A lot of our income has been through open data in particular - if you replace academia with public sector, and open access with open data, you can see similar effects. Funders are much happier with this model - the major European frameworks now mandate a percentage of funding that must go to SMEs - as it encouraging a range of competing SMEs is healthier for consumers than subsidising a multinational to entrenche it's monopoly through exclusive research.</li>
+					  </ul>
+					</aside>
+				  </section>
+				  <section data-transition="fade-in">
+				  	<img src='images/trl-separate.png'>
+				  </section>
+				  <section data-transition="fade-in">
+				        <img src='images/trl-open.png'>
+				  </section>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				parallaxBackgroundImage: 'images/obig-presentation2-back.png',
+				backgroundTransition: 'slide',
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/data-src-svg/data-src-svg.babel.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
